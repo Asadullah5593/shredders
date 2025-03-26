@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f2efdf;
+        color: black;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo {
+        width: 300px;
+        height: auto;
+        /* Adjust size as needed */
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .timer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+        flex-wrap: nowrap;
+        /* Ensures it stays in one row */
+      }
+
+      .timer div {
+        text-align: center;
+        padding: 10px;
+        background: #f7941f;
+        /* background: rgba(0, 0, 0, 0.1); */
+        border-radius: 5px;
+        width: 75px;
+      }
+
+      .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social-icons a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+
+      .social-icons a.youtube:hover {
+        color: #ff0000;
+      }
+
+      .social-icons a.snapchat:hover {
+        color: #fffc00;
+      }
+
+      .social-icons a.instagram:hover {
+        color: #e4405f;
+      }
+
+      .social-icons a.facebook:hover {
+        color: #1877f2;
+      }
+
+      .social-icons a.tiktok:hover {
+        color: #69c9d0;
+      }
+
+      /* Floating WhatsApp Button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366; /* WhatsApp green */
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+        text-decoration: none;
+      }
+
+      .whatsapp-float:hover {
+        background-color: #128c7e; /* Darker WhatsApp green */
+      }
+
+      @media (max-width: 400px) {
+        .timer {
+          gap: 5px;
+        }
+
+        .timer div {
+          width: 60px;
+          padding: 8px; /* Reduced padding */
+          font-size: 0.8rem; /* Smaller font size */
+        }
+
+        .timer span {
+          font-size: 1.2rem; /* Adjust the number size */
+        }
+
+        .timer small {
+          font-size: 0.7rem; /* Adjust the label size */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Something Amazing is Coming Soon!</h1>
+      <img
+        src="WhatsApp Image 2025-03-12 at 3.23.16 PM.jpeg"
+        alt="Logo"
+        class="logo"
+      />
+      <!-- Replace with your logo -->
+      <div class="timer">
+        <div><span id="days">00</span><br />Days</div>
+        <div><span id="hours">00</span><br />Hours</div>
+        <div><span id="minutes">00</span><br />Minutes</div>
+        <div><span id="seconds">00</span><br />Seconds</div>
+      </div>
+
+      <div class="email-input">
+        <h2>
+          Join Us, Be Part of Something Bigger, Build Together, Thrive Forever.
+        </h2>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://www.youtube.com/@ShreddersStore"
+          target="_blank"
+          class="youtube"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.snapchat.com/add/shreddersstore?share_id=R0N6GhAu2s0&locale=en-PK"
+          target="_blank"
+          class="snapchat"
+          ><i class="fab fa-snapchat"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/shredders.store?utm_source=qr&igsh=MTQ0ZTZ6eW5qdDJxbA=="
+          target="_blank"
+          class="instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1GaUpsT52c/"
+          target="_blank"
+          class="facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@shreddersstore?_t=ZS-8tyIPH1hKzP&_r=1"
+          target="_blank"
+          class="tiktok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/03052223334" target="_blank" class="whatsapp-float">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+      function countdown() {
+        let savedDate = localStorage.getItem("countdownStart");
+        let targetDate;
+
+        if (savedDate) {
+          targetDate = new Date(savedDate);
+        } else {
+          targetDate = new Date();
+          targetDate.setDate(targetDate.getDate() + 31); // Set countdown for 31 days from now
+          localStorage.setItem("countdownStart", targetDate);
+        }
+
+        function updateTimer() {
+          let now = new Date();
+          let timeDifference = targetDate - now;
+
+          if (timeDifference <= 0) {
+            document.querySelector(".timer").innerHTML = "<h2>Time's Up!</h2>";
+            localStorage.removeItem("countdownStart");
+            return;
+          }
+
+          let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+          let hours = Math.floor(
+            (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          let minutes = Math.floor(
+            (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          let seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = days;
+          document.getElementById("hours").textContent = hours;
+          document.getElementById("minutes").textContent = minutes;
+          document.getElementById("seconds").textContent = seconds;
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+      }
+
+      countdown();
+    </script>
+  </body>
+</html>
+<!-- #f7941f -->
